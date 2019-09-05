@@ -8,3 +8,8 @@ spring:
 
 server:
   port: 7172
+
+#JWT 秘钥
+jwt:
+  secret: webdemo
+  expiredTime: 3600 #单位‘秒’

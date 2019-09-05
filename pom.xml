@@ -57,12 +57,18 @@
             <version>${mysql-connector-java}</version>
         </dependency>
 
+        <!-- JWT -->
         <dependency>
-            <groupId>net.sourceforge.nekohtml</groupId>
-            <artifactId>nekohtml</artifactId>
-            <version>1.9.22</version>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.7.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>4.5.15</version>
+        </dependency>
 
     </dependencies>
 
@@ -75,19 +81,6 @@
                 </includes>
             </resource>
         </resources>
-
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <!-- 多模块下，不指定会出现启动类，打包会出错 -->
-                    <mainClass>
-                        com.seari.ApplicationStart
-                    </mainClass>
-                </configuration>
-            </plugin>
-        </plugins>
     </build>
 
 

@@ -12,7 +12,6 @@
     <artifactId>webdemo-web</artifactId>
     <packaging>war</packaging>
 
-
     <properties>
         <cnpm>cnpm</cnpm>
     </properties>
@@ -67,6 +66,17 @@
                     </execution>
 
                 </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <!-- 多模块下，不指定会出现启动类，打包会出错 -->
+                    <mainClass>
+                        com.seari.ApplicationStart
+                    </mainClass>
+                </configuration>
             </plugin>
 
         </plugins>
