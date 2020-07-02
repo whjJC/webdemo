@@ -18,7 +18,7 @@
 
     <properties>
         <mybatis-plus>3.1.1</mybatis-plus>
-        <mysql-connector-java>8.0.11</mysql-connector-java>
+        <mysql-connector-java>8.0.16</mysql-connector-java>
     </properties>
 
     <parent>
